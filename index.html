@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyle de Noël</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="conteneur-video">
+        <video id="video-vinyle" loop muted playsinline>
+            <source src="Videos/vinyl_loop.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="interface-couche">
+        
+        <div id="titre-chanson" class="titre-style">
+            En attente de lecture...
+        </div>
+
+        <div class="bottom-section">
+        <canvas id="canvas-visualiseur"></canvas>
+
+        <div class="conteneur-boutons">
+
+            <button id="btn-precedent" class="bouton" title="Précédent">
+                <i class="fa-solid fa-backward-step"></i>
+            </button>
+
+            <button id="btn-lecture" class="bouton bouton-principal" title="Lecture / Pause">
+                <i class="fa-solid fa-play" id="icone-lecture"></i>
+            </button>
+
+            <button id="btn-suivant" class="bouton" title="Suivant">
+                <i class="fa-solid fa-forward-step"></i>
+            </button>
+        </div>
+        </div>
+
+    </div>
+
+    <audio id="lecteur-audio" crossorigin="anonymous"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
